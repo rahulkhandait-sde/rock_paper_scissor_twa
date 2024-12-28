@@ -4,7 +4,7 @@ import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
 import { getContract } from "thirdweb";
-import { baseSepolia } from "thirdweb/chains";
+import { defineChain } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 
 type Choice = 'Rock' | 'Paper' | 'Scissors';
@@ -39,8 +39,8 @@ export default function RockPaperScissors() {
 
     const contract = getContract({
         client: client,
-        chain: baseSepolia,
-        address: "<YOUR_TOKEN_CONTRACT_ADDRESS>"
+        chain: defineChain(545),
+        address: "0x1E8160c78f9E34E2439DC23b67F760F1c6c03bE9"
     });
 
     const [result, setResult] = useState<GameResult | null>(null);
