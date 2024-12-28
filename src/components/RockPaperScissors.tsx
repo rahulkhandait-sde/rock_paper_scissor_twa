@@ -103,7 +103,7 @@ export default function RockPaperScissors() {
                     <ConnectButton
                         client={client}
                         accountAbstraction={{
-                            chain: baseSepolia,
+                            chain: defineChain(545),
                             sponsorGas: true
                         }}
                         wallets={[
