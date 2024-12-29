@@ -99,7 +99,7 @@ export default function RockPaperScissors() {
                 justifyContent: 'flex-start',
                 position: 'relative'
             }}>
-                <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>Mini Game</h1>
+                <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '2rem', textAlign: 'center' }}>🪨 📄 ✂️ Game</h1>
                 {!account ? (
                     <ConnectButton
                         client={client}
@@ -260,7 +260,7 @@ export default function RockPaperScissors() {
                                                         quantity: "10"
                                                     })}
                                                     onTransactionConfirmed={() => {
-                                                        alert('Prize claimed!')
+                                                        // alert('Prize claimed!')
                                                         setShowModal(false)
                                                         setPrizeClaimed(true)
                                                     }}
