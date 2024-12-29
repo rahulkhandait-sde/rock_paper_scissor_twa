@@ -7,7 +7,6 @@ import { getContract } from "thirdweb";
 import { sepolia } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 
-
 type Choice = 'Rock' | 'Paper' | 'Scissors';
 type Result = 'Win' | 'Lose' | 'Tie';
 
@@ -111,7 +110,8 @@ export default function RockPaperScissors() {
                             inAppWallet({
                                 auth: {
                                     options:[
-                                        "email"
+                                        "email",
+                                        "phone"                                        
                                     ]
                                 }
                             })
