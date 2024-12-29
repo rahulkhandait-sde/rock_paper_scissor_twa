@@ -3,9 +3,10 @@ import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, us
 import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
-import { getContract } from "thirdweb";
-import { defineChain } from "thirdweb/chains";
+import { defineChain, getContract } from "thirdweb";
+// import { flowTestnet } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
+
 
 type Choice = 'Rock' | 'Paper' | 'Scissors';
 type Result = 'Win' | 'Lose' | 'Tie';
@@ -102,10 +103,10 @@ export default function RockPaperScissors() {
                 {!account ? (
                     <ConnectButton
                         client={client}
-                        accountAbstraction={{
-                            chain: defineChain(545),
-                            sponsorGas: true
-                        }}
+                        // accountAbstraction={{
+                        //     chain: defineChain(545),
+                        //     sponsorGas: true,
+                        // }}
                         wallets={[
                             inAppWallet({
                                 auth: {
