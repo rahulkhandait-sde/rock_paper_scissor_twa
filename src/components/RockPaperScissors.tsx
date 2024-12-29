@@ -3,8 +3,8 @@ import { ConnectButton, TransactionButton, useActiveAccount, useActiveWallet, us
 import { client } from "../client";
 import { inAppWallet } from "thirdweb/wallets";
 import { shortenAddress } from "thirdweb/utils";
-import { defineChain, getContract } from "thirdweb";
-// import { flowTestnet } from "thirdweb/chains";
+import { getContract } from "thirdweb";
+import { sepolia } from "thirdweb/chains";
 import { claimTo, getBalance } from "thirdweb/extensions/erc20";
 
 
@@ -40,8 +40,8 @@ export default function RockPaperScissors() {
 
     const contract = getContract({
         client: client,
-        chain: defineChain(545),
-        address: "0x1E8160c78f9E34E2439DC23b67F760F1c6c03bE9"
+        chain: sepolia,
+        address: "0x01e4677b2A230559cC6db43F6C56577d38Dc8118"
     });
 
     const [result, setResult] = useState<GameResult | null>(null);
@@ -103,10 +103,10 @@ export default function RockPaperScissors() {
                 {!account ? (
                     <ConnectButton
                         client={client}
-                        // accountAbstraction={{
-                        //     chain: defineChain(545),
-                        //     sponsorGas: true,
-                        // }}
+                         accountAbstraction={{
+                             chain: sepolia,
+                             sponsorGas: true,
+                         }}
                         wallets={[
                             inAppWallet({
                                 auth: {
