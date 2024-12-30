@@ -1,0 +1,22 @@
+{
+    "name": "Rock Paper Scissors TWA",
+    "image": "mcr.microsoft.com/devcontainers/typescript:0-18",
+    "forwardPorts": [
+      3000
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
+          "eslint.nodePath": "/usr/local/lib/node_modules/eslint",
+          "editor.formatOnSave": true
+        },
+        "extensions": [
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "vscode.typescript-language-features"
+        ]
+      }
+    },
+    "postCreateCommand": "npm install"
+  }
