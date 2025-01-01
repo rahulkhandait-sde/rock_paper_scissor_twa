@@ -1,22 +1,25 @@
 {
-    "name": "Rock Paper Scissors TWA",
-    "image": "mcr.microsoft.com/devcontainers/typescript:0-18",
-    "forwardPorts": [
-      3000
-    ],
-    "customizations": {
-      "vscode": {
-        "settings": {
-          "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
-          "eslint.nodePath": "/usr/local/lib/node_modules/eslint",
-          "editor.formatOnSave": true
-        },
-        "extensions": [
-          "esbenp.prettier-vscode",
-          "dbaeumer.vscode-eslint",
-          "vscode.typescript-language-features"
-        ]
-      }
-    },
-    "postCreateCommand": "npm install"
-  }
+	"name": "Rock Paper Scissors TWA",
+	// 1) Make sure the image is valid
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
+
+	// 2) Forward the port that Vite/React runs on
+	"forwardPorts": [3000],
+
+	// 3) Optionally install extra tools or run commands
+	"postCreateCommand": "npm install",
+
+	// 4) VS Code customizations
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true
+			},
+			"extensions": [
+				"esbenp.prettier-vscode",
+				"dbaeumer.vscode-eslint",
+				"vscode.typescript-language-features"
+			]
+		}
+	}
+}
