@@ -90,3 +90,6 @@ Feel free to contribute or reach out to the team for any queries!
 **Note**: Since the project is on the Flow Testnet, users can acquire test FLOW tokens from the [Flow Testnet Faucet](https://testnet-faucet.onflow.org/fund-account) to interact with the application.
 
 For more information on integrating thirdweb's Sign-In with Ethereum, refer to their [documentation](https://portal.thirdweb.com/connect/auth). 
+
+
+[<img src="https://api.gitsponsors.com/api/badge/img?id=909485127" height="20">](https://api.gitsponsors.com/api/badge/link?p=lgtuiOSs+TTeesHNGnzI0urR+h2yYJWGKQHD3Bq8woFI0J1tBQ10XHC2AEH9mKPNdurFKTv0F7O/2NDGIf6YizYH+/N3FGZjqPphuxqz7AMytmkTqZaUDz/7mPgMWYhP85P7si4s10CHromHzHrHfc2KrJk0KT4CeizJUCl9hrY=)
